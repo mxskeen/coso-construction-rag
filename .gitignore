@@ -21,3 +21,6 @@ data/index_cache/
 
 # Raw full corpus download
 RAG-Interview-Test-Corpus*
+
+# Model weights
+models/
