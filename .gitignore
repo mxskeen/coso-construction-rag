@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Index cache and model checkpoints
+data/index_cache/
+*.pkl
+*.index
+
+# Logs and OS files
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Raw full corpus download
+RAG-Interview-Test-Corpus*
