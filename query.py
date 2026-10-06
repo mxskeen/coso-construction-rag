@@ -20,7 +20,7 @@ def ask_question(query: str, retriever: ConstructionHybridRetriever, generator: 
     print(f"\n[Question]: {query}\n" + "-" * 60)
     
     # 1. Retrieve top-k chunks
-    chunks = retriever.retrieve(query, top_k=3, hybrid=True)
+    chunks = retriever.retrieve(query, top_k=5, hybrid=True)
     if not chunks:
         print("No matching clauses found in corpus.")
         return
