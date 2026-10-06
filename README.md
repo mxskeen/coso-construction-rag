@@ -43,13 +43,15 @@ python query.py "What is the penalty for delay under CPWD contracts?"
 
 # Technical engineering standard question
 python query.py "What is the minimum nominal cover for severe exposure condition?"
-
 ```
 
 Or enter interactive mode:
 ```bash
 python query.py
 ```
+
+> **Generation & LLM Note**:
+> By default, the system runs with **zero external dependencies** — if no local LLM daemon is running, `src/generator.py` uses a table- and rank-aware extractive fallback that surfaces verbatim operative clauses with citations. If you have [Ollama](https://ollama.ai) installed (`ollama run qwen2.5-coder`), the generator automatically detects `http://localhost:11434` and uses it for grounded synthesis.
 
 ### 3. Run Benchmark Evaluation
 To reproduce the retrieval evaluation comparing the base model vs. the fine-tuned model:
