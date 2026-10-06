@@ -6,6 +6,8 @@ A focused RAG pipeline built over Indian construction documents (engineering sta
 
 ## Architecture
 
+<img width="1447" height="823" alt="image" src="https://github.com/user-attachments/assets/98cab406-5a0a-4459-80ee-29000d64129f" />
+
 
 1. **Parser**: Extracts text while stripping headers/noise, preserves clause hierarchies (`Clause 2`, `Table 16`), and prepends document/clause breadcrumbs to each chunk.
 2. **Fine-Tuning**: Adapts a sentence-transformer (`all-MiniLM-L6-v2`) on construction triplets using `MultipleNegativesRankingLoss` (InfoNCE).
